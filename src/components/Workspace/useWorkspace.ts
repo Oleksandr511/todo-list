@@ -26,7 +26,6 @@ export const useWorkspace = () => {
       const targetData = target.data;
       const edge = extractClosestEdge(targetData);
 
-      // Card dropped on another card - reorder or move between columns
       if (sourceData.type === "card" && targetData.type === "card") {
         const sourceTaskId = sourceData.taskId as string;
         const sourceColumnId = sourceData.columnId as string;
@@ -71,7 +70,6 @@ export const useWorkspace = () => {
         reorderColumn(sourceColumnId, toIndex);
       }
 
-      // Card dropped on column (empty area) - append to end of column
       if (sourceData.type === "card" && targetData.type === "column") {
         const sourceTaskId = sourceData.taskId as string;
         const sourceColumnId = sourceData.columnId as string;

@@ -48,9 +48,11 @@ export const LaneHeader = memo(
               onClick={handleSelectAll}
               title="Select all tasks in lane"
             >
-              {allSelected ? "ok" : someSelected ? "–" : ""}
+              {allSelected ? "ok" : someSelected ? "–" : "all"}
             </Button>
           )}
+          <span className={styles.count}>{taskIds.length}</span>
+
           {isEditing ? (
             <input
               ref={inputRef}
@@ -62,7 +64,6 @@ export const LaneHeader = memo(
           ) : (
             <h3 className={styles.title}>{title}</h3>
           )}
-          <span className={styles.count}>{taskIds.length}</span>
         </div>
         {showColumnSelect && (
           <div className={styles.headerActions}>

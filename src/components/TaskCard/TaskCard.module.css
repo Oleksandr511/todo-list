@@ -29,7 +29,7 @@
 }
 
 .selected {
-  border-left: 3px solid var(--color-selected-border);
+  border: 2px solid var(--color-selected-border);
   background: var(--color-selected-bg);
 }
 

@@ -82,6 +82,7 @@ export const TaskItem = memo(({ taskId, columnId }: TaskCardProps) => {
     isDragging,
     closestEdge,
     hasMultipleColumns,
+    showColumnSelect,
     columns,
     cardRef,
     editInputRef,
@@ -114,14 +115,16 @@ export const TaskItem = memo(({ taskId, columnId }: TaskCardProps) => {
       {closestEdge && <DropIndicator edge={closestEdge} gap="8px" />}
 
       <div className={styles.toolbar}>
-        <Button
-          variant="select"
-          active={isSelected}
-          onClick={handleSelectClick}
-          title={isSelected ? "Deselect task" : "Select task"}
-        >
-          {isSelected ? "ok" : ""}
-        </Button>
+        {showColumnSelect && (
+          <Button
+            variant="select"
+            active={isSelected}
+            onClick={handleSelectClick}
+            title={isSelected ? "Deselect task" : "Select task"}
+          >
+            {isSelected ? "ok" : "sel"}
+          </Button>
+        )}
 
         <div className={styles.actions}>
           {isEditing ? (

@@ -23,6 +23,7 @@ export const useTaskItem = (taskId: string, columnId: string) => {
   const setActiveTask = useUIStore((s) => s.setActiveTask);
   const isInteracting = useUIStore((s) => s.isInteracting);
   const setIsInteracting = useUIStore((s) => s.setIsInteracting);
+  const showColumnSelect = useUIStore((s) => s.showColumnSelect);
 
   const isSelected = selectedTaskIds.has(taskId);
   const isActive = activeTaskId === taskId;
@@ -182,6 +183,7 @@ export const useTaskItem = (taskId: string, columnId: string) => {
     isDragging,
     closestEdge,
     hasMultipleColumns,
+    showColumnSelect,
     columns,
     cardRef,
     editInputRef,

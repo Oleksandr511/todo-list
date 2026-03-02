@@ -13,7 +13,6 @@ export default [
 
   ...tseslint.configs.recommended,
 
-  // TypeScript файли додатку
   {
     files: ["src/**/*.{ts,tsx}"],
     languageOptions: {
