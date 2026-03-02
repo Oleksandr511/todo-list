@@ -1,0 +1,71 @@
+:root {
+  /* ── Backgrounds ───────────────────────────────────────────────── */
+  --color-bg: #f0f2f8;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f5f6fb;
+  --color-surface-subtle: #f9fafc;
+
+  /* ── Borders ───────────────────────────────────────────────────── */
+  --color-border: #dde1ee;
+  --color-border-light: #e8eaf3;
+
+  /* ── Text ──────────────────────────────────────────────────────── */
+  --color-text: #1c2033;
+  --color-text-secondary: #596180;
+  --color-text-muted: #9ba3be;
+  --color-text-inverse: #ffffff;
+
+  /* ── Primary – indigo ──────────────────────────────────────────── */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-light: #eef2ff;
+
+  /* ── Success – emerald ─────────────────────────────────────────── */
+  --color-success: #059669;
+  --color-success-light: #d1fae5;
+
+  /* ── Warning – amber ───────────────────────────────────────────── */
+  --color-warning: #d97706;
+  --color-warning-hover: #b45309;
+  --color-warning-light: #fef3c7;
+
+  /* ── Danger – red ──────────────────────────────────────────────── */
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+  --color-danger-light: #fee2e2;
+
+  /* ── Selection & drag ──────────────────────────────────────────── */
+  --color-selected-border: var(--color-primary);
+  --color-selected-bg: var(--color-primary-light);
+  --color-drag-indicator: var(--color-primary);
+
+  /* ── Spacing ───────────────────────────────────────────────────── */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+
+  /* ── Radius ────────────────────────────────────────────────────── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* ── Shadows ───────────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 3px rgba(28, 32, 51, 0.07), 0 1px 2px rgba(28, 32, 51, 0.04);
+  --shadow-md: 0 4px 12px rgba(28, 32, 51, 0.10), 0 2px 4px rgba(28, 32, 51, 0.05);
+  --shadow-lg: 0 12px 28px rgba(28, 32, 51, 0.14), 0 4px 10px rgba(28, 32, 51, 0.07);
+
+  /* ── Typography ────────────────────────────────────────────────── */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 15px;
+  --font-size-xl: 18px;
+
+  /* ── Layout ────────────────────────────────────────────────────── */
+  --column-width: 340px;
+  --toolbar-height: 56px;
+}

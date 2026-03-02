@@ -1,0 +1,55 @@
+.board {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  overflow-x: auto;
+  flex: 1;
+  align-items: flex-start;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.board::-webkit-scrollbar {
+  height: 8px;
+}
+
+.board::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 0 var(--spacing-xl);
+}
+
+.board::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 10px;
+}
+
+.board::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+.empty {
+  margin: auto;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+@media (max-width: 767px) {
+  .board {
+    flex-direction: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: var(--spacing-md);
+    scrollbar-width: none;
+    height: 100%;
+  }
+
+  .board::-webkit-scrollbar {
+    display: none;
+  }
+}

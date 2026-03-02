@@ -1,0 +1,17 @@
+.application {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .application * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

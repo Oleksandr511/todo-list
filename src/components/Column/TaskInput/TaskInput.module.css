@@ -1,0 +1,56 @@
+.wrapper {
+  padding: var(--spacing-sm);
+  position: relative;
+}
+
+.textarea {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  padding-right: 36px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  resize: vertical;
+  min-height: 44px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: 1.4;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  border-style: solid;
+  background: var(--color-surface);
+}
+
+.textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.confirmBtn {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  background: var(--color-success);
+  border: 1px solid var(--color-success);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .confirmBtn:hover {
+    opacity: 0.85;
+  }
+}

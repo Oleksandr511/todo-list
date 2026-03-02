@@ -1,0 +1,7 @@
+.indicator {
+  position: absolute;
+  background: var(--color-drag-indicator);
+  border-radius: 1px;
+  pointer-events: none;
+  z-index: 10;
+}

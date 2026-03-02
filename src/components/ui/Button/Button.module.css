@@ -1,0 +1,120 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  flex-shrink: 0;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--color-text);
+  transition: background 0.13s ease, color 0.13s ease;
+}
+
+.sm {
+  padding: 3px 7px;
+  font-size: var(--font-size-xs, 11px);
+  min-height: 22px;
+}
+
+.md {
+  padding: 4px 9px;
+  font-size: var(--font-size-sm);
+  min-height: 26px;
+}
+
+/* ── select ───────────────────────── */
+.select {
+  color: var(--color-text-muted);
+}
+.selectActive {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+/* ── edit ─────────────────────────── */
+.edit {
+  color: var(--color-text);
+}
+
+/* ── save ─────────────────────────── */
+.save {
+  color: var(--color-success);
+  background: var(--color-success-light);
+}
+
+/* ── complete ─────────────────────── */
+.complete {
+  color: var(--color-text);
+}
+.completeActive {
+  color: var(--color-success);
+  background: var(--color-success-light);
+}
+
+/* ── move ─────────────────────────── */
+.move {
+  color: var(--color-text);
+}
+
+/* ── delete ───────────────────────── */
+.delete {
+  color: var(--color-text);
+}
+
+/* ── muted modifier ───────────────── */
+.muted {
+  opacity: 0.35;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    background: var(--color-surface-hover);
+    color: var(--color-text-secondary);
+  }
+
+  .select:hover {
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+  }
+
+  .selectActive:hover {
+    opacity: 0.8;
+  }
+
+  .edit:hover {
+    color: var(--color-warning);
+    background: var(--color-warning-light);
+  }
+
+  .save:hover {
+    background: var(--color-success);
+    color: var(--color-text-inverse);
+  }
+
+  .complete:hover {
+    color: var(--color-success);
+    background: var(--color-success-light);
+  }
+
+  .completeActive:hover {
+    background: var(--color-success);
+    color: var(--color-text-inverse);
+  }
+
+  .move:hover {
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+  }
+
+  .delete:hover {
+    color: var(--color-danger);
+    background: var(--color-danger-light);
+  }
+
+  .muted:hover {
+    opacity: 1;
+  }
+}
