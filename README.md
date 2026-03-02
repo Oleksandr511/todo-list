@@ -2,6 +2,8 @@
 
 Todo board for managing tasks. Built with React + TypeScript + Vite.
 
+#DEMO https://todo-list-one-zeta-20.vercel.app/
+
 
 
 ## Getting started
